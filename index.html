@@ -3,9 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/index.css">
     <title>Multi-step Form</title>
 </head>
 <body>
-    Hi
+    <!-- <img class="cover-image" src="./assets/images/bg-sidebar-mobile.svg"> -->
+    <div class="cover-image">
+        <div class="steps">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+        </div>
+        <section id="Personal_info">
+            <h1>Personal info</h1>
+            <h2>
+                Please provide your name, email address, and phone number.
+            </h2>
+            <div class="form_group">
+                <label for="name_field">Name</label> 
+                <input id="name_field" name="Name" type="text" placeholder="e.g. Stephen King ">
+            </div>
+
+            <div class="form_group">
+                <label for="email_field">Email Address</label> 
+                <input id="email_field" type="text" placeholder="e.g. stephenking@lorem.com ">
+            </div>
+
+            <div class="form_group">
+                <label for="phone_field"> Phone Number </label> 
+                <input id="phone_field" type="text" placeholder="e.g. +1 234 567 890" autocomplete> 
+            </div>
+        </section>
+        
+        <section>
+            <h1> Select your plan </h1>
+            <h2> You have the option of monthly or yearly billing. </h2>
+            <div class="plan option_1">
+                <img src="./assets/images/icon-arcade.svg">
+                <span>
+                    <div  class="plan_name">Arcade</div>
+                    <div  class="plan_price"> $9/mo</div>
+                </span>
+            </div> 
+            <div class="plan option_1">
+                <img src="./assets/images/icon-advanced.svg" >
+                <span>
+                    <div class="plan_name">
+                        Advanced 
+                    </div>
+                    <div class="plan_price">
+                        $12/mo
+                    </div>
+                </span>
+            </div> 
+            <div class="plan option_1">
+                <img src="./assets/images/icon-pro.svg" >
+                <span>
+                    <div  class="plan_name">
+                        Pro 
+                    </div>
+                    <div class="plan_price">
+                        $15/mo
+                    </div>
+                </span>
+            </div> 
+            <div>
+            <input type="checkbox">
+            <span class="slider"></span>
+             Monthly Yearly
+            </div> 
+            <footer>
+             Go Back 
+            <button> Next Step </button>
+            </footer>
+             <!-- Pick add-ons Add-ons help enhance your gaming experience. Online service Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back Next Step Finishing up Double-check everything looks OK before confirming. Total (per month/year) Go Back Confirm Thank you! Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.  -->
+    </div>
+    
+    
+    <footer>
+        <button>Next Step</button>
+    </footer>
+
 </body>
 </html>
